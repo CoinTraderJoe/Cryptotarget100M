@@ -85,8 +85,9 @@ DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/qa/pull-tester/run-cryptotarget100Md-for-test.sh.in \
 	$(top_srcdir)/qa/pull-tester/build-tests.sh.in COPYING INSTALL \
 	src/build-aux/compile src/build-aux/config.guess \
-	src/build-aux/config.sub src/build-aux/install-sh \
-	src/build-aux/missing $(top_srcdir)/src/build-aux/compile \
+	src/build-aux/config.sub src/build-aux/depcomp \
+	src/build-aux/install-sh src/build-aux/missing \
+	$(top_srcdir)/src/build-aux/compile \
 	$(top_srcdir)/src/build-aux/config.guess \
 	$(top_srcdir)/src/build-aux/config.sub \
 	$(top_srcdir)/src/build-aux/install-sh \
@@ -214,13 +215,13 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing automake-1.14
+AUTOCONF = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing automake-1.14
 AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
@@ -243,9 +244,9 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 0
-CLIENT_VERSION_MINOR = 9
-CLIENT_VERSION_REVISION = 5
+CLIENT_VERSION_MAJOR = 1
+CLIENT_VERSION_MINOR = 0
+CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2015
 CPP = gcc -E
@@ -292,7 +293,7 @@ LRELEASE = /usr/bin/lrelease-qt4
 LTLIBOBJS = 
 LUPDATE = /usr/bin/lupdate-qt4
 MAINT = 
-MAKEINFO = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing makeinfo
 MAKENSIS = 
 MKDIR_P = /bin/mkdir -p
 MOC = /usr/bin/moc-qt4
@@ -308,10 +309,10 @@ OTOOL =
 PACKAGE = cryptotarget100M
 PACKAGE_BUGREPORT = info@cryptotarget100M.org
 PACKAGE_NAME = Cryptotarget100M Core
-PACKAGE_STRING = Cryptotarget100M Core 0.9.5
+PACKAGE_STRING = Cryptotarget100M Core 1.0.0
 PACKAGE_TARNAME = cryptotarget100M
 PACKAGE_URL = 
-PACKAGE_VERSION = 0.9.5
+PACKAGE_VERSION = 1.0.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
@@ -348,14 +349,14 @@ TESTDEFS =  -DBOOST_TEST_DYN_LINK
 UIC = /usr/bin/uic-qt4
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 0.9.5
+VERSION = 1.0.0
 WINDOWS_BITS = 
 WINDRES = 
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/sb/crt100m/cryptotarget100M
-abs_srcdir = /home/sb/crt100m/cryptotarget100M
-abs_top_builddir = /home/sb/crt100m/cryptotarget100M
-abs_top_srcdir = /home/sb/crt100m/cryptotarget100M
+abs_builddir = /home/sb/newestcrt/Cryptotarget100M
+abs_srcdir = /home/sb/newestcrt/Cryptotarget100M
+abs_top_builddir = /home/sb/newestcrt/Cryptotarget100M
+abs_top_srcdir = /home/sb/newestcrt/Cryptotarget100M
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_OBJC = gcc
@@ -386,7 +387,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/install-sh
+install_sh = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

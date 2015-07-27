@@ -22,10 +22,10 @@ if [ $# -lt 2 ]; then
   exit 1
 fi
 
-DISTDIR=cryptotarget100M-0.9.5
+DISTDIR=cryptotarget100M-1.0.0
 
 # Cross-compile for windows first (breaking the mingw/windows build is most common)
-cd /home/sb/crt100m/cryptotarget100M
+cd /home/sb/newestcrt/Cryptotarget100M
 make distdir
 mkdir -p win32-build
 rsync -av $DISTDIR/ win32-build/
@@ -40,7 +40,7 @@ fi
 make -j$JOBS
 
 # And compile for Linux:
-cd /home/sb/crt100m/cryptotarget100M
+cd /home/sb/newestcrt/Cryptotarget100M
 make distdir
 mkdir -p linux-build
 rsync -av $DISTDIR/ linux-build/
@@ -58,41 +58,41 @@ make -j$JOBS
 if [ -d "$OUT_DIR" -a -w "$OUT_DIR" ]; then
   set +e
   # Windows:
-  cp /home/sb/crt100m/cryptotarget100M/win32-build/src/cryptotarget100Md.exe $OUT_DIR/cryptotarget100Md.exe
-  cp /home/sb/crt100m/cryptotarget100M/win32-build/src/test/test_cryptotarget100M.exe $OUT_DIR/test_cryptotarget100M.exe
-  cp /home/sb/crt100m/cryptotarget100M/win32-build/src/qt/cryptotarget100Md-qt.exe $OUT_DIR/cryptotarget100M-qt.exe
+  cp /home/sb/newestcrt/Cryptotarget100M/win32-build/src/cryptotarget100Md.exe $OUT_DIR/cryptotarget100Md.exe
+  cp /home/sb/newestcrt/Cryptotarget100M/win32-build/src/test/test_cryptotarget100M.exe $OUT_DIR/test_cryptotarget100M.exe
+  cp /home/sb/newestcrt/Cryptotarget100M/win32-build/src/qt/cryptotarget100Md-qt.exe $OUT_DIR/cryptotarget100M-qt.exe
   # Linux:
-  cp /home/sb/crt100m/cryptotarget100M/linux-build/src/cryptotarget100Md $OUT_DIR/cryptotarget100Md
-  cp /home/sb/crt100m/cryptotarget100M/linux-build/src/test/test_cryptotarget100M $OUT_DIR/test_cryptotarget100M
-  cp /home/sb/crt100m/cryptotarget100M/linux-build/src/qt/cryptotarget100Md-qt $OUT_DIR/cryptotarget100M-qt
+  cp /home/sb/newestcrt/Cryptotarget100M/linux-build/src/cryptotarget100Md $OUT_DIR/cryptotarget100Md
+  cp /home/sb/newestcrt/Cryptotarget100M/linux-build/src/test/test_cryptotarget100M $OUT_DIR/test_cryptotarget100M
+  cp /home/sb/newestcrt/Cryptotarget100M/linux-build/src/qt/cryptotarget100Md-qt $OUT_DIR/cryptotarget100M-qt
   set -e
 fi
 
 # Run unit tests and blockchain-tester on Linux:
-cd /home/sb/crt100m/cryptotarget100M/linux-build
+cd /home/sb/newestcrt/Cryptotarget100M/linux-build
 make check
 
 # Run RPC integration test on Linux:
-/home/sb/crt100m/cryptotarget100M/qa/rpc-tests/wallet.sh /home/sb/crt100m/cryptotarget100M/linux-build/src
-/home/sb/crt100m/cryptotarget100M/qa/rpc-tests/listtransactions.py --srcdir /home/sb/crt100m/cryptotarget100M/linux-build/src
+/home/sb/newestcrt/Cryptotarget100M/qa/rpc-tests/wallet.sh /home/sb/newestcrt/Cryptotarget100M/linux-build/src
+/home/sb/newestcrt/Cryptotarget100M/qa/rpc-tests/listtransactions.py --srcdir /home/sb/newestcrt/Cryptotarget100M/linux-build/src
 # Clean up cache/ directory that the python regression tests create
 rm -rf cache
 
 if [ $RUN_EXPENSIVE_TESTS = 1 ]; then
   # Run unit tests and blockchain-tester on Windows:
-  cd /home/sb/crt100m/cryptotarget100M/win32-build
+  cd /home/sb/newestcrt/Cryptotarget100M/win32-build
   make check
 fi
 
 # Clean up builds (pull-tester machine doesn't have infinite disk space)
-cd /home/sb/crt100m/cryptotarget100M/linux-build
+cd /home/sb/newestcrt/Cryptotarget100M/linux-build
 make clean
-cd /home/sb/crt100m/cryptotarget100M/win32-build
+cd /home/sb/newestcrt/Cryptotarget100M/win32-build
 make clean
 
 # TODO: Fix code coverage builds on pull-tester machine
 # # Test code coverage
-# cd /home/sb/crt100m/cryptotarget100M
+# cd /home/sb/newestcrt/Cryptotarget100M
 # make distdir
 # mv $DISTDIR linux-coverage-build
 # cd linux-coverage-build

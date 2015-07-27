@@ -150,13 +150,14 @@ am__v_AR_1 =
 libcryptotarget100Mqt_a_AR = $(AR) $(ARFLAGS)
 libcryptotarget100Mqt_a_LIBADD =
 am__libcryptotarget100Mqt_a_SOURCES_DIST = cryptotarget100M.cpp \
-	cryptotarget100Maddressvalidator.cpp cryptotarget100Mamountfield.cpp \
-	cryptotarget100Mgui.cpp cryptotarget100Munits.cpp clientmodel.cpp \
-	csvmodelwriter.cpp guiutil.cpp intro.cpp \
-	monitoreddatamapper.cpp notificator.cpp optionsdialog.cpp \
-	optionsmodel.cpp qvalidatedlineedit.cpp qvaluecombobox.cpp \
-	rpcconsole.cpp splashscreen.cpp trafficgraphwidget.cpp \
-	utilitydialog.cpp winshutdownmonitor.cpp addressbookpage.cpp \
+	cryptotarget100Maddressvalidator.cpp \
+	cryptotarget100Mamountfield.cpp cryptotarget100Mgui.cpp \
+	cryptotarget100Munits.cpp clientmodel.cpp csvmodelwriter.cpp \
+	guiutil.cpp intro.cpp monitoreddatamapper.cpp notificator.cpp \
+	optionsdialog.cpp optionsmodel.cpp qvalidatedlineedit.cpp \
+	qvaluecombobox.cpp rpcconsole.cpp splashscreen.cpp \
+	trafficgraphwidget.cpp utilitydialog.cpp \
+	winshutdownmonitor.cpp addressbookpage.cpp \
 	addresstablemodel.cpp askpassphrasedialog.cpp \
 	coincontroldialog.cpp coincontroltreewidget.cpp \
 	editaddressdialog.cpp openuridialog.cpp overviewpage.cpp \
@@ -169,7 +170,8 @@ am__libcryptotarget100Mqt_a_SOURCES_DIST = cryptotarget100M.cpp \
 	transactiontablemodel.cpp transactionview.cpp walletframe.cpp \
 	walletmodel.cpp walletmodeltransaction.cpp walletview.cpp \
 	addressbookpage.h addresstablemodel.h askpassphrasedialog.h \
-	cryptotarget100Maddressvalidator.h cryptotarget100Mamountfield.h cryptotarget100Mgui.h \
+	cryptotarget100Maddressvalidator.h \
+	cryptotarget100Mamountfield.h cryptotarget100Mgui.h \
 	cryptotarget100Munits.h clientmodel.h coincontroldialog.h \
 	coincontroltreewidget.h csvmodelwriter.h editaddressdialog.h \
 	guiconstants.h guiutil.h intro.h macdockiconhandler.h \
@@ -193,43 +195,50 @@ am__libcryptotarget100Mqt_a_SOURCES_DIST = cryptotarget100M.cpp \
 	forms/sendcoinsdialog.ui forms/sendcoinsentry.ui \
 	forms/signverifymessagedialog.ui \
 	forms/transactiondescdialog.ui cryptotarget100M.qrc \
-	locale/cryptotarget100M_ach.ts locale/cryptotarget100M_af_ZA.ts \
-	locale/cryptotarget100M_ar.ts locale/cryptotarget100M_be_BY.ts \
-	locale/cryptotarget100M_bg.ts locale/cryptotarget100M_bs.ts \
-	locale/cryptotarget100M_ca_ES.ts locale/cryptotarget100M_ca.ts \
-	locale/cryptotarget100M_ca@valencia.ts locale/cryptotarget100M_cmn.ts \
-	locale/cryptotarget100M_cs.ts locale/cryptotarget100M_cy.ts locale/cryptotarget100M_da.ts \
+	locale/cryptotarget100M_ach.ts \
+	locale/cryptotarget100M_af_ZA.ts locale/cryptotarget100M_ar.ts \
+	locale/cryptotarget100M_be_BY.ts locale/cryptotarget100M_bg.ts \
+	locale/cryptotarget100M_bs.ts locale/cryptotarget100M_ca_ES.ts \
+	locale/cryptotarget100M_ca.ts \
+	locale/cryptotarget100M_ca@valencia.ts \
+	locale/cryptotarget100M_cmn.ts locale/cryptotarget100M_cs.ts \
+	locale/cryptotarget100M_cy.ts locale/cryptotarget100M_da.ts \
 	locale/cryptotarget100M_de.ts locale/cryptotarget100M_el_GR.ts \
 	locale/cryptotarget100M_en.ts locale/cryptotarget100M_eo.ts \
-	locale/cryptotarget100M_es_CL.ts locale/cryptotarget100M_es_DO.ts \
+	locale/cryptotarget100M_es_CL.ts \
+	locale/cryptotarget100M_es_DO.ts \
 	locale/cryptotarget100M_es_MX.ts locale/cryptotarget100M_es.ts \
 	locale/cryptotarget100M_es_UY.ts locale/cryptotarget100M_et.ts \
-	locale/cryptotarget100M_eu_ES.ts locale/cryptotarget100M_fa_IR.ts \
-	locale/cryptotarget100M_fa.ts locale/cryptotarget100M_fi.ts \
-	locale/cryptotarget100M_fr_CA.ts locale/cryptotarget100M_fr.ts \
-	locale/cryptotarget100M_gl.ts locale/cryptotarget100M_gu_IN.ts \
-	locale/cryptotarget100M_he.ts locale/cryptotarget100M_hi_IN.ts \
-	locale/cryptotarget100M_hr.ts locale/cryptotarget100M_hu.ts \
-	locale/cryptotarget100M_id_ID.ts locale/cryptotarget100M_it.ts \
-	locale/cryptotarget100M_ja.ts locale/cryptotarget100M_ka.ts \
-	locale/cryptotarget100M_kk_KZ.ts locale/cryptotarget100M_ko_KR.ts \
-	locale/cryptotarget100M_ky.ts locale/cryptotarget100M_la.ts locale/cryptotarget100M_lt.ts \
+	locale/cryptotarget100M_eu_ES.ts \
+	locale/cryptotarget100M_fa_IR.ts locale/cryptotarget100M_fa.ts \
+	locale/cryptotarget100M_fi.ts locale/cryptotarget100M_fr_CA.ts \
+	locale/cryptotarget100M_fr.ts locale/cryptotarget100M_gl.ts \
+	locale/cryptotarget100M_gu_IN.ts locale/cryptotarget100M_he.ts \
+	locale/cryptotarget100M_hi_IN.ts locale/cryptotarget100M_hr.ts \
+	locale/cryptotarget100M_hu.ts locale/cryptotarget100M_id_ID.ts \
+	locale/cryptotarget100M_it.ts locale/cryptotarget100M_ja.ts \
+	locale/cryptotarget100M_ka.ts locale/cryptotarget100M_kk_KZ.ts \
+	locale/cryptotarget100M_ko_KR.ts locale/cryptotarget100M_ky.ts \
+	locale/cryptotarget100M_la.ts locale/cryptotarget100M_lt.ts \
 	locale/cryptotarget100M_lv_LV.ts locale/cryptotarget100M_mn.ts \
 	locale/cryptotarget100M_ms_MY.ts locale/cryptotarget100M_nb.ts \
 	locale/cryptotarget100M_nl.ts locale/cryptotarget100M_pam.ts \
 	locale/cryptotarget100M_pl.ts locale/cryptotarget100M_pt_BR.ts \
-	locale/cryptotarget100M_pt_PT.ts locale/cryptotarget100M_ro_RO.ts \
-	locale/cryptotarget100M_ru.ts locale/cryptotarget100M_sah.ts \
-	locale/cryptotarget100M_sk.ts locale/cryptotarget100M_sl_SI.ts \
-	locale/cryptotarget100M_sq.ts locale/cryptotarget100M_sr.ts locale/cryptotarget100M_sv.ts \
+	locale/cryptotarget100M_pt_PT.ts \
+	locale/cryptotarget100M_ro_RO.ts locale/cryptotarget100M_ru.ts \
+	locale/cryptotarget100M_sah.ts locale/cryptotarget100M_sk.ts \
+	locale/cryptotarget100M_sl_SI.ts locale/cryptotarget100M_sq.ts \
+	locale/cryptotarget100M_sr.ts locale/cryptotarget100M_sv.ts \
 	locale/cryptotarget100M_th_TH.ts locale/cryptotarget100M_tr.ts \
 	locale/cryptotarget100M_uk.ts locale/cryptotarget100M_ur_PK.ts \
-	locale/cryptotarget100M_uz@Cyrl.ts locale/cryptotarget100M_vi.ts \
-	locale/cryptotarget100M_vi_VN.ts locale/cryptotarget100M_zh_CN.ts \
-	locale/cryptotarget100M_zh_HK.ts locale/cryptotarget100M_zh_TW.ts \
-	paymentrequest.proto res/icons/add.png \
-	res/icons/address-book.png res/icons/cryptotarget100M.ico \
-	res/icons/cryptotarget100M.png res/icons/cryptotarget100M_testnet.ico \
+	locale/cryptotarget100M_uz@Cyrl.ts \
+	locale/cryptotarget100M_vi.ts locale/cryptotarget100M_vi_VN.ts \
+	locale/cryptotarget100M_zh_CN.ts \
+	locale/cryptotarget100M_zh_HK.ts \
+	locale/cryptotarget100M_zh_TW.ts paymentrequest.proto \
+	res/icons/add.png res/icons/address-book.png \
+	res/icons/cryptotarget100M.ico res/icons/cryptotarget100M.png \
+	res/icons/cryptotarget100M_testnet.ico \
 	res/icons/cryptotarget100M_testnet.png res/icons/clock1.png \
 	res/icons/clock2.png res/icons/clock3.png res/icons/clock4.png \
 	res/icons/clock5.png res/icons/configure.png \
@@ -250,8 +259,7 @@ am__libcryptotarget100Mqt_a_SOURCES_DIST = cryptotarget100M.cpp \
 	res/icons/tx_mined.png res/images/about.png \
 	res/images/splash.png res/images/splash_testnet.png $(wildcard \
 	res/movies/spinner-*.png)
-am__objects_1 =  \
-	libcryptotarget100Mqt_a-addressbookpage.$(OBJEXT) \
+am__objects_1 = libcryptotarget100Mqt_a-addressbookpage.$(OBJEXT) \
 	libcryptotarget100Mqt_a-addresstablemodel.$(OBJEXT) \
 	libcryptotarget100Mqt_a-askpassphrasedialog.$(OBJEXT) \
 	libcryptotarget100Mqt_a-coincontroldialog.$(OBJEXT) \
@@ -296,7 +304,8 @@ am__objects_2 = libcryptotarget100Mqt_a-cryptotarget100M.$(OBJEXT) \
 	libcryptotarget100Mqt_a-splashscreen.$(OBJEXT) \
 	libcryptotarget100Mqt_a-trafficgraphwidget.$(OBJEXT) \
 	libcryptotarget100Mqt_a-utilitydialog.$(OBJEXT) \
-	libcryptotarget100Mqt_a-winshutdownmonitor.$(OBJEXT) $(am__objects_1)
+	libcryptotarget100Mqt_a-winshutdownmonitor.$(OBJEXT) \
+	$(am__objects_1)
 am__objects_3 =
 am_libcryptotarget100Mqt_a_OBJECTS = $(am__objects_2) $(am__objects_3) \
 	$(am__objects_3) $(am__objects_3) $(am__objects_3) \
@@ -346,35 +355,41 @@ am__objects_4 = libcryptotarget100Mqt_a-moc_addressbookpage.$(OBJEXT) \
 	libcryptotarget100Mqt_a-moc_walletmodel.$(OBJEXT) \
 	libcryptotarget100Mqt_a-moc_walletview.$(OBJEXT)
 am__objects_5 = libcryptotarget100Mqt_a-paymentrequest.pb.$(OBJEXT)
-am__objects_6 = libcryptotarget100Mqt_a-qrc_cryptotarget100M.$(OBJEXT)
-nodist_libcryptotarget100Mqt_a_OBJECTS = $(am__objects_4) $(am__objects_3) \
-	$(am__objects_5) $(am__objects_3) $(am__objects_6)
-libcryptotarget100Mqt_a_OBJECTS = $(am_libcryptotarget100Mqt_a_OBJECTS) \
+am__objects_6 =  \
+	libcryptotarget100Mqt_a-qrc_cryptotarget100M.$(OBJEXT)
+nodist_libcryptotarget100Mqt_a_OBJECTS = $(am__objects_4) \
+	$(am__objects_3) $(am__objects_5) $(am__objects_3) \
+	$(am__objects_6)
+libcryptotarget100Mqt_a_OBJECTS =  \
+	$(am_libcryptotarget100Mqt_a_OBJECTS) \
 	$(nodist_libcryptotarget100Mqt_a_OBJECTS)
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am__cryptotarget100M_qt_SOURCES_DIST = cryptotarget100M.cpp macdockiconhandler.mm \
-	macnotificationhandler.mm res/cryptotarget100M-qt-res.rc
+am__cryptotarget100M_qt_SOURCES_DIST = cryptotarget100M.cpp \
+	macdockiconhandler.mm macnotificationhandler.mm \
+	res/cryptotarget100M-qt-res.rc
 am__objects_7 = cryptotarget100M_qt-macdockiconhandler.$(OBJEXT) \
 	cryptotarget100M_qt-macnotificationhandler.$(OBJEXT)
 #am__objects_8 = $(am__objects_7)
 am__dirstamp = $(am__leading_dot)dirstamp
 am__objects_9 = res/cryptotarget100M-qt-res.$(OBJEXT)
 #am__objects_10 = $(am__objects_9)
-am_cryptotarget100M_qt_OBJECTS = cryptotarget100M_qt-cryptotarget100M.$(OBJEXT) $(am__objects_8) \
-	$(am__objects_10)
+am_cryptotarget100M_qt_OBJECTS =  \
+	cryptotarget100M_qt-cryptotarget100M.$(OBJEXT) \
+	$(am__objects_8) $(am__objects_10)
 cryptotarget100M_qt_OBJECTS = $(am_cryptotarget100M_qt_OBJECTS)
 am__DEPENDENCIES_1 = $(am__append_2)
 am__DEPENDENCIES_2 = $(am__append_3)
 am__DEPENDENCIES_3 =
-cryptotarget100M_qt_DEPENDENCIES = libcryptotarget100Mqt.a $(LIBCRYPTOTARGET100M_SERVER) \
-	$(am__append_7) $(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+cryptotarget100M_qt_DEPENDENCIES = libcryptotarget100Mqt.a \
+	$(LIBCRYPTOTARGET100M_SERVER) $(am__append_7) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) \
 	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
 	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
 	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
-cryptotarget100M_qt_LINK = $(OBJCXXLD) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) \
-	$(cryptotarget100M_qt_LDFLAGS) $(LDFLAGS) -o $@
+cryptotarget100M_qt_LINK = $(OBJCXXLD) $(AM_OBJCXXFLAGS) \
+	$(OBJCXXFLAGS) $(cryptotarget100M_qt_LDFLAGS) $(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -433,7 +448,8 @@ AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(libcryptotarget100Mqt_a_SOURCES) $(nodist_libcryptotarget100Mqt_a_SOURCES) \
+SOURCES = $(libcryptotarget100Mqt_a_SOURCES) \
+	$(nodist_libcryptotarget100Mqt_a_SOURCES) \
 	$(cryptotarget100M_qt_SOURCES)
 DIST_SOURCES = $(am__libcryptotarget100Mqt_a_SOURCES_DIST) \
 	$(am__cryptotarget100M_qt_SOURCES_DIST)
@@ -503,13 +519,13 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing automake-1.14
+AUTOCONF = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing automake-1.14
 AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
@@ -532,9 +548,9 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 0
-CLIENT_VERSION_MINOR = 9
-CLIENT_VERSION_REVISION = 5
+CLIENT_VERSION_MAJOR = 1
+CLIENT_VERSION_MINOR = 0
+CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2015
 CPP = gcc -E
@@ -581,7 +597,7 @@ LRELEASE = /usr/bin/lrelease-qt4
 LTLIBOBJS = 
 LUPDATE = /usr/bin/lupdate-qt4
 MAINT = 
-MAKEINFO = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing makeinfo
 MAKENSIS = 
 MKDIR_P = /bin/mkdir -p
 MOC = /usr/bin/moc-qt4
@@ -597,10 +613,10 @@ OTOOL =
 PACKAGE = cryptotarget100M
 PACKAGE_BUGREPORT = info@cryptotarget100M.org
 PACKAGE_NAME = Cryptotarget100M Core
-PACKAGE_STRING = Cryptotarget100M Core 0.9.5
+PACKAGE_STRING = Cryptotarget100M Core 1.0.0
 PACKAGE_TARNAME = cryptotarget100M
 PACKAGE_URL = 
-PACKAGE_VERSION = 0.9.5
+PACKAGE_VERSION = 1.0.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
@@ -637,14 +653,14 @@ TESTDEFS =  -DBOOST_TEST_DYN_LINK
 UIC = /usr/bin/uic-qt4
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 0.9.5
+VERSION = 1.0.0
 WINDOWS_BITS = 
 WINDRES = 
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/sb/crt100m/cryptotarget100M/src/qt
-abs_srcdir = /home/sb/crt100m/cryptotarget100M/src/qt
-abs_top_builddir = /home/sb/crt100m/cryptotarget100M
-abs_top_srcdir = /home/sb/crt100m/cryptotarget100M
+abs_builddir = /home/sb/newestcrt/Cryptotarget100M/src/qt
+abs_srcdir = /home/sb/newestcrt/Cryptotarget100M/src/qt
+abs_top_builddir = /home/sb/newestcrt/Cryptotarget100M
+abs_top_srcdir = /home/sb/newestcrt/Cryptotarget100M
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_OBJC = gcc
@@ -675,7 +691,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/install-sh
+install_sh = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -957,13 +973,15 @@ RES_ICONS = \
   res/icons/tx_output.png \
   res/icons/tx_mined.png
 
-CRYPTOTARGET100M_QT_CPP = cryptotarget100M.cpp cryptotarget100Maddressvalidator.cpp \
-	cryptotarget100Mamountfield.cpp cryptotarget100Mgui.cpp cryptotarget100Munits.cpp \
-	clientmodel.cpp csvmodelwriter.cpp guiutil.cpp intro.cpp \
-	monitoreddatamapper.cpp notificator.cpp optionsdialog.cpp \
-	optionsmodel.cpp qvalidatedlineedit.cpp qvaluecombobox.cpp \
-	rpcconsole.cpp splashscreen.cpp trafficgraphwidget.cpp \
-	utilitydialog.cpp winshutdownmonitor.cpp $(am__append_4)
+CRYPTOTARGET100M_QT_CPP = cryptotarget100M.cpp \
+	cryptotarget100Maddressvalidator.cpp \
+	cryptotarget100Mamountfield.cpp cryptotarget100Mgui.cpp \
+	cryptotarget100Munits.cpp clientmodel.cpp csvmodelwriter.cpp \
+	guiutil.cpp intro.cpp monitoreddatamapper.cpp notificator.cpp \
+	optionsdialog.cpp optionsmodel.cpp qvalidatedlineedit.cpp \
+	qvaluecombobox.cpp rpcconsole.cpp splashscreen.cpp \
+	trafficgraphwidget.cpp utilitydialog.cpp \
+	winshutdownmonitor.cpp $(am__append_4)
 RES_IMAGES = \
   res/images/about.png \
   res/images/splash.png \
@@ -986,11 +1004,13 @@ BUILT_SOURCES = $(nodist_libcryptotarget100Mqt_a_SOURCES)
 cryptotarget100M_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
 
-cryptotarget100M_qt_SOURCES = cryptotarget100M.cpp $(am__append_5) $(am__append_6)
-cryptotarget100M_qt_LDADD = libcryptotarget100Mqt.a $(LIBCRYPTOTARGET100M_SERVER) $(am__append_7) \
-	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) $(LIBLEVELDB) \
-	$(LIBMEMENV) $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) \
-	$(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
+cryptotarget100M_qt_SOURCES = cryptotarget100M.cpp $(am__append_5) \
+	$(am__append_6)
+cryptotarget100M_qt_LDADD = libcryptotarget100Mqt.a \
+	$(LIBCRYPTOTARGET100M_SERVER) $(am__append_7) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+	$(LIBLEVELDB) $(LIBMEMENV) $(BOOST_LIBS) $(QT_LIBS) \
+	$(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
 cryptotarget100M_qt_LDFLAGS = $(QT_LDFLAGS)
 
 # forms/foo.h -> forms/ui_foo.h
@@ -1111,14 +1131,14 @@ include ./$(DEPDIR)/cryptotarget100M_qt-macnotificationhandler.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-addressbookpage.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-addresstablemodel.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-askpassphrasedialog.Po
+include ./$(DEPDIR)/libcryptotarget100Mqt_a-clientmodel.Po
+include ./$(DEPDIR)/libcryptotarget100Mqt_a-coincontroldialog.Po
+include ./$(DEPDIR)/libcryptotarget100Mqt_a-coincontroltreewidget.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-cryptotarget100M.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-cryptotarget100Maddressvalidator.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-cryptotarget100Mamountfield.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-cryptotarget100Mgui.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-cryptotarget100Munits.Po
-include ./$(DEPDIR)/libcryptotarget100Mqt_a-clientmodel.Po
-include ./$(DEPDIR)/libcryptotarget100Mqt_a-coincontroldialog.Po
-include ./$(DEPDIR)/libcryptotarget100Mqt_a-coincontroltreewidget.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-csvmodelwriter.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-editaddressdialog.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-guiutil.Po
@@ -1126,13 +1146,13 @@ include ./$(DEPDIR)/libcryptotarget100Mqt_a-intro.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_addressbookpage.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_addresstablemodel.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_askpassphrasedialog.Po
+include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_clientmodel.Po
+include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_coincontroldialog.Po
+include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_coincontroltreewidget.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_cryptotarget100Maddressvalidator.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_cryptotarget100Mamountfield.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_cryptotarget100Mgui.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_cryptotarget100Munits.Po
-include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_clientmodel.Po
-include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_coincontroldialog.Po
-include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_coincontroltreewidget.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_csvmodelwriter.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_editaddressdialog.Po
 include ./$(DEPDIR)/libcryptotarget100Mqt_a-moc_guiutil.Po

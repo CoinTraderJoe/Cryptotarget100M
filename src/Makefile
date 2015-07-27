@@ -130,15 +130,17 @@ am__v_AR_1 =
 libcryptotarget100M_cli_a_AR = $(AR) $(ARFLAGS)
 libcryptotarget100M_cli_a_LIBADD =
 am__objects_1 =
-am_libcryptotarget100M_cli_a_OBJECTS = rpcclient.$(OBJEXT) $(am__objects_1)
-libcryptotarget100M_cli_a_OBJECTS = $(am_libcryptotarget100M_cli_a_OBJECTS)
+am_libcryptotarget100M_cli_a_OBJECTS = rpcclient.$(OBJEXT) \
+	$(am__objects_1)
+libcryptotarget100M_cli_a_OBJECTS =  \
+	$(am_libcryptotarget100M_cli_a_OBJECTS)
 libcryptotarget100M_common_a_AR = $(AR) $(ARFLAGS)
 libcryptotarget100M_common_a_LIBADD =
-am__libcryptotarget100M_common_a_SOURCES_DIST = base58.cpp allocators.cpp \
-	chainparams.cpp core.cpp hash.cpp key.cpp netbase.cpp \
-	protocol.cpp rpcprotocol.cpp script.cpp sync.cpp util.cpp \
-	version.cpp addrman.h alert.h allocators.h base58.h bignum.h \
-	bloom.h chainparams.h checkpoints.h checkqueue.h \
+am__libcryptotarget100M_common_a_SOURCES_DIST = base58.cpp \
+	allocators.cpp chainparams.cpp core.cpp hash.cpp key.cpp \
+	netbase.cpp protocol.cpp rpcprotocol.cpp script.cpp sync.cpp \
+	util.cpp version.cpp addrman.h alert.h allocators.h base58.h \
+	bignum.h bloom.h chainparams.h checkpoints.h checkqueue.h \
 	clientversion.h coincontrol.h coins.h compat.h core.h \
 	crypter.h db.h hash.h init.h key.h keystore.h leveldbwrapper.h \
 	limitedmap.h main.h miner.h mruset.h netbase.h net.h noui.h \
@@ -150,53 +152,62 @@ am__libcryptotarget100M_common_a_SOURCES_DIST = base58.cpp allocators.cpp \
 am__dirstamp = $(am__leading_dot)dirstamp
 #am__objects_2 = compat/glibc_compat.$(OBJEXT) \
 #	compat/glibcxx_compat.$(OBJEXT)
-am_libcryptotarget100M_common_a_OBJECTS = base58.$(OBJEXT) allocators.$(OBJEXT) \
-	chainparams.$(OBJEXT) core.$(OBJEXT) hash.$(OBJEXT) \
-	key.$(OBJEXT) netbase.$(OBJEXT) protocol.$(OBJEXT) \
-	rpcprotocol.$(OBJEXT) script.$(OBJEXT) sync.$(OBJEXT) \
-	util.$(OBJEXT) version.$(OBJEXT) $(am__objects_1) \
-	$(am__objects_2)
+am_libcryptotarget100M_common_a_OBJECTS = base58.$(OBJEXT) \
+	allocators.$(OBJEXT) chainparams.$(OBJEXT) core.$(OBJEXT) \
+	hash.$(OBJEXT) key.$(OBJEXT) netbase.$(OBJEXT) \
+	protocol.$(OBJEXT) rpcprotocol.$(OBJEXT) script.$(OBJEXT) \
+	sync.$(OBJEXT) util.$(OBJEXT) version.$(OBJEXT) \
+	$(am__objects_1) $(am__objects_2)
 nodist_libcryptotarget100M_common_a_OBJECTS =
-libcryptotarget100M_common_a_OBJECTS = $(am_libcryptotarget100M_common_a_OBJECTS) \
+libcryptotarget100M_common_a_OBJECTS =  \
+	$(am_libcryptotarget100M_common_a_OBJECTS) \
 	$(nodist_libcryptotarget100M_common_a_OBJECTS)
 libcryptotarget100M_server_a_AR = $(AR) $(ARFLAGS)
 libcryptotarget100M_server_a_LIBADD =
-am_libcryptotarget100M_server_a_OBJECTS = addrman.$(OBJEXT) alert.$(OBJEXT) \
-	bloom.$(OBJEXT) checkpoints.$(OBJEXT) coins.$(OBJEXT) \
-	init.$(OBJEXT) keystore.$(OBJEXT) leveldbwrapper.$(OBJEXT) \
-	main.$(OBJEXT) miner.$(OBJEXT) net.$(OBJEXT) noui.$(OBJEXT) \
-	rpcblockchain.$(OBJEXT) rpcmining.$(OBJEXT) rpcmisc.$(OBJEXT) \
-	rpcnet.$(OBJEXT) rpcrawtransaction.$(OBJEXT) \
-	rpcserver.$(OBJEXT) txdb.$(OBJEXT) txmempool.$(OBJEXT) \
-	$(am__objects_1) $(am__objects_1)
-libcryptotarget100M_server_a_OBJECTS = $(am_libcryptotarget100M_server_a_OBJECTS)
+am_libcryptotarget100M_server_a_OBJECTS = addrman.$(OBJEXT) \
+	alert.$(OBJEXT) bloom.$(OBJEXT) checkpoints.$(OBJEXT) \
+	coins.$(OBJEXT) init.$(OBJEXT) keystore.$(OBJEXT) \
+	leveldbwrapper.$(OBJEXT) main.$(OBJEXT) miner.$(OBJEXT) \
+	net.$(OBJEXT) noui.$(OBJEXT) rpcblockchain.$(OBJEXT) \
+	rpcmining.$(OBJEXT) rpcmisc.$(OBJEXT) rpcnet.$(OBJEXT) \
+	rpcrawtransaction.$(OBJEXT) rpcserver.$(OBJEXT) txdb.$(OBJEXT) \
+	txmempool.$(OBJEXT) $(am__objects_1) $(am__objects_1)
+libcryptotarget100M_server_a_OBJECTS =  \
+	$(am_libcryptotarget100M_server_a_OBJECTS)
 libcryptotarget100M_wallet_a_AR = $(AR) $(ARFLAGS)
 libcryptotarget100M_wallet_a_LIBADD =
-am_libcryptotarget100M_wallet_a_OBJECTS = db.$(OBJEXT) crypter.$(OBJEXT) \
-	rpcdump.$(OBJEXT) rpcwallet.$(OBJEXT) wallet.$(OBJEXT) \
-	walletdb.$(OBJEXT) $(am__objects_1)
-libcryptotarget100M_wallet_a_OBJECTS = $(am_libcryptotarget100M_wallet_a_OBJECTS)
-am__EXEEXT_1 = cryptotarget100Md$(EXEEXT)
+am_libcryptotarget100M_wallet_a_OBJECTS = db.$(OBJEXT) \
+	crypter.$(OBJEXT) rpcdump.$(OBJEXT) rpcwallet.$(OBJEXT) \
+	wallet.$(OBJEXT) walletdb.$(OBJEXT) $(am__objects_1)
+libcryptotarget100M_wallet_a_OBJECTS =  \
+	$(am_libcryptotarget100M_wallet_a_OBJECTS)
+am__EXEEXT_1 =  \
+	cryptotarget100Md$(EXEEXT)
 am__EXEEXT_2 = cryptotarget100M-cli$(EXEEXT)
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am__cryptotarget100M_cli_SOURCES_DIST = cryptotarget100M-cli.cpp cryptotarget100M-cli-res.rc
-#am__objects_3 = cryptotarget100M-cli-res.$(OBJEXT)
-am_cryptotarget100M_cli_OBJECTS = cryptotarget100M-cli.$(OBJEXT) $(am__objects_3)
+am__cryptotarget100M_cli_SOURCES_DIST = cryptotarget100M-cli.cpp \
+	cryptotarget100M-cli-res.rc
+#am__objects_3 =  \
+#	cryptotarget100M-cli-res.$(OBJEXT)
+am_cryptotarget100M_cli_OBJECTS = cryptotarget100M-cli.$(OBJEXT) \
+	$(am__objects_3)
 cryptotarget100M_cli_OBJECTS = $(am_cryptotarget100M_cli_OBJECTS)
 am__DEPENDENCIES_1 =
-cryptotarget100M_cli_DEPENDENCIES = libcryptotarget100M_cli.a libcryptotarget100M_common.a \
-	$(am__DEPENDENCIES_1)
-am__cryptotarget100Md_SOURCES_DIST = cryptotarget100Md.cpp cryptotarget100Md-res.rc
+cryptotarget100M_cli_DEPENDENCIES = libcryptotarget100M_cli.a \
+	libcryptotarget100M_common.a $(am__DEPENDENCIES_1)
+am__cryptotarget100Md_SOURCES_DIST = cryptotarget100Md.cpp \
+	cryptotarget100Md-res.rc
 #am__objects_4 = cryptotarget100Md-res.$(OBJEXT)
-am_cryptotarget100Md_OBJECTS = cryptotarget100Md.$(OBJEXT) $(am__objects_4)
+am_cryptotarget100Md_OBJECTS = cryptotarget100Md.$(OBJEXT) \
+	$(am__objects_4)
 cryptotarget100Md_OBJECTS = $(am_cryptotarget100Md_OBJECTS)
 am__DEPENDENCIES_2 = $(am__append_2)
 am__DEPENDENCIES_3 = $(am__append_3)
-cryptotarget100Md_DEPENDENCIES = libcryptotarget100M_server.a libcryptotarget100M_cli.a \
-	libcryptotarget100M_common.a $(am__DEPENDENCIES_2) \
-	$(am__DEPENDENCIES_3) $(am__append_8) $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1)
+cryptotarget100Md_DEPENDENCIES = libcryptotarget100M_server.a \
+	libcryptotarget100M_cli.a libcryptotarget100M_common.a \
+	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) $(am__append_8) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -238,14 +249,18 @@ AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(libcryptotarget100M_cli_a_SOURCES) $(libcryptotarget100M_common_a_SOURCES) \
+SOURCES = $(libcryptotarget100M_cli_a_SOURCES) \
+	$(libcryptotarget100M_common_a_SOURCES) \
 	$(nodist_libcryptotarget100M_common_a_SOURCES) \
-	$(libcryptotarget100M_server_a_SOURCES) $(libcryptotarget100M_wallet_a_SOURCES) \
+	$(libcryptotarget100M_server_a_SOURCES) \
+	$(libcryptotarget100M_wallet_a_SOURCES) \
 	$(cryptotarget100M_cli_SOURCES) $(cryptotarget100Md_SOURCES)
 DIST_SOURCES = $(libcryptotarget100M_cli_a_SOURCES) \
 	$(am__libcryptotarget100M_common_a_SOURCES_DIST) \
-	$(libcryptotarget100M_server_a_SOURCES) $(libcryptotarget100M_wallet_a_SOURCES) \
-	$(am__cryptotarget100M_cli_SOURCES_DIST) $(am__cryptotarget100Md_SOURCES_DIST)
+	$(libcryptotarget100M_server_a_SOURCES) \
+	$(libcryptotarget100M_wallet_a_SOURCES) \
+	$(am__cryptotarget100M_cli_SOURCES_DIST) \
+	$(am__cryptotarget100Md_SOURCES_DIST)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
 	ctags-recursive dvi-recursive html-recursive info-recursive \
 	install-data-recursive install-dvi-recursive \
@@ -313,13 +328,13 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing automake-1.14
+AUTOCONF = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing automake-1.14
 AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
@@ -342,9 +357,9 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 0
-CLIENT_VERSION_MINOR = 9
-CLIENT_VERSION_REVISION = 5
+CLIENT_VERSION_MAJOR = 1
+CLIENT_VERSION_MINOR = 0
+CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2015
 CPP = gcc -E
@@ -391,7 +406,7 @@ LRELEASE = /usr/bin/lrelease-qt4
 LTLIBOBJS = 
 LUPDATE = /usr/bin/lupdate-qt4
 MAINT = 
-MAKEINFO = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing makeinfo
 MAKENSIS = 
 MKDIR_P = /bin/mkdir -p
 MOC = /usr/bin/moc-qt4
@@ -407,10 +422,10 @@ OTOOL =
 PACKAGE = cryptotarget100M
 PACKAGE_BUGREPORT = info@cryptotarget100M.org
 PACKAGE_NAME = Cryptotarget100M Core
-PACKAGE_STRING = Cryptotarget100M Core 0.9.5
+PACKAGE_STRING = Cryptotarget100M Core 1.0.0
 PACKAGE_TARNAME = cryptotarget100M
 PACKAGE_URL = 
-PACKAGE_VERSION = 0.9.5
+PACKAGE_VERSION = 1.0.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
@@ -447,14 +462,14 @@ TESTDEFS =  -DBOOST_TEST_DYN_LINK
 UIC = /usr/bin/uic-qt4
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 0.9.5
+VERSION = 1.0.0
 WINDOWS_BITS = 
 WINDRES = 
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/sb/crt100m/cryptotarget100M/src
-abs_srcdir = /home/sb/crt100m/cryptotarget100M/src
-abs_top_builddir = /home/sb/crt100m/cryptotarget100M
-abs_top_srcdir = /home/sb/crt100m/cryptotarget100M
+abs_builddir = /home/sb/newestcrt/Cryptotarget100M/src
+abs_srcdir = /home/sb/newestcrt/Cryptotarget100M/src
+abs_top_builddir = /home/sb/newestcrt/Cryptotarget100M
+abs_top_srcdir = /home/sb/newestcrt/Cryptotarget100M
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_OBJC = gcc
@@ -485,7 +500,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/install-sh
+install_sh = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -514,8 +529,9 @@ LIBCRYPTOTARGET100M_WALLET = $(top_builddir)/src/libcryptotarget100M_wallet.a
 LIBCRYPTOTARGET100M_COMMON = $(top_builddir)/src/libcryptotarget100M_common.a
 LIBCRYPTOTARGET100M_CLI = $(top_builddir)/src/libcryptotarget100M_cli.a
 LIBCRYPTOTARGET100MQT = $(top_builddir)/src/qt/libcryptotarget100Mqt.a
-noinst_LIBRARIES = libcryptotarget100M_server.a libcryptotarget100M_common.a \
-	libcryptotarget100M_cli.a $(am__append_4)
+noinst_LIBRARIES = libcryptotarget100M_server.a \
+	libcryptotarget100M_common.a libcryptotarget100M_cli.a \
+	$(am__append_4)
 SUBDIRS = . $(BUILD_QT) $(BUILD_TEST)
 DIST_SUBDIRS = . qt test
 # cryptotarget100M core #
@@ -621,9 +637,10 @@ nodist_libcryptotarget100M_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
 # cryptotarget100Md binary #
-cryptotarget100Md_LDADD = libcryptotarget100M_server.a libcryptotarget100M_cli.a \
-	libcryptotarget100M_common.a $(LIBLEVELDB) $(LIBMEMENV) $(am__append_8) \
-	$(BOOST_LIBS) $(BDB_LIBS)
+cryptotarget100Md_LDADD = libcryptotarget100M_server.a \
+	libcryptotarget100M_cli.a libcryptotarget100M_common.a \
+	$(LIBLEVELDB) $(LIBMEMENV) $(am__append_8) $(BOOST_LIBS) \
+	$(BDB_LIBS)
 cryptotarget100Md_SOURCES = cryptotarget100Md.cpp $(am__append_9)
 
 # cryptotarget100M-cli binary #
@@ -632,7 +649,8 @@ cryptotarget100M_cli_LDADD = \
   libcryptotarget100M_common.a \
   $(BOOST_LIBS)
 
-cryptotarget100M_cli_SOURCES = cryptotarget100M-cli.cpp $(am__append_10)
+cryptotarget100M_cli_SOURCES = cryptotarget100M-cli.cpp \
+	$(am__append_10)
 CLEANFILES = leveldb/libleveldb.a leveldb/libmemenv.a *.gcda *.gcno
 DISTCLEANFILES = obj/build.h
 EXTRA_DIST = leveldb Makefile.include
@@ -782,14 +800,14 @@ include ./$(DEPDIR)/addrman.Po
 include ./$(DEPDIR)/alert.Po
 include ./$(DEPDIR)/allocators.Po
 include ./$(DEPDIR)/base58.Po
-include ./$(DEPDIR)/cryptotarget100M-cli.Po
-include ./$(DEPDIR)/cryptotarget100Md.Po
 include ./$(DEPDIR)/bloom.Po
 include ./$(DEPDIR)/chainparams.Po
 include ./$(DEPDIR)/checkpoints.Po
 include ./$(DEPDIR)/coins.Po
 include ./$(DEPDIR)/core.Po
 include ./$(DEPDIR)/crypter.Po
+include ./$(DEPDIR)/cryptotarget100M-cli.Po
+include ./$(DEPDIR)/cryptotarget100Md.Po
 include ./$(DEPDIR)/db.Po
 include ./$(DEPDIR)/hash.Po
 include ./$(DEPDIR)/init.Po

@@ -119,15 +119,16 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am__test_cryptotarget100M_SOURCES_DIST = alert_tests.cpp allocator_tests.cpp \
-	base32_tests.cpp base58_tests.cpp base64_tests.cpp \
-	bignum_tests.cpp bloom_tests.cpp canonical_tests.cpp \
-	checkblock_tests.cpp Checkpoints_tests.cpp compress_tests.cpp \
-	DoS_tests.cpp getarg_tests.cpp key_tests.cpp main_tests.cpp \
-	miner_tests.cpp mruset_tests.cpp multisig_tests.cpp \
-	netbase_tests.cpp pmt_tests.cpp rpc_tests.cpp \
-	script_P2SH_tests.cpp script_tests.cpp serialize_tests.cpp \
-	sigopcount_tests.cpp test_cryptotarget100M.cpp transaction_tests.cpp \
+am__test_cryptotarget100M_SOURCES_DIST = alert_tests.cpp \
+	allocator_tests.cpp base32_tests.cpp base58_tests.cpp \
+	base64_tests.cpp bignum_tests.cpp bloom_tests.cpp \
+	canonical_tests.cpp checkblock_tests.cpp Checkpoints_tests.cpp \
+	compress_tests.cpp DoS_tests.cpp getarg_tests.cpp \
+	key_tests.cpp main_tests.cpp miner_tests.cpp mruset_tests.cpp \
+	multisig_tests.cpp netbase_tests.cpp pmt_tests.cpp \
+	rpc_tests.cpp script_P2SH_tests.cpp script_tests.cpp \
+	serialize_tests.cpp sigopcount_tests.cpp \
+	test_cryptotarget100M.cpp transaction_tests.cpp \
 	uint256_tests.cpp util_tests.cpp scriptnum_tests.cpp \
 	sighash_tests.cpp data/script_valid.json \
 	data/base58_keys_valid.json data/sig_canonical.json \
@@ -137,11 +138,11 @@ am__test_cryptotarget100M_SOURCES_DIST = alert_tests.cpp allocator_tests.cpp \
 	data/alertTests.raw accounting_tests.cpp wallet_tests.cpp \
 	rpc_wallet_tests.cpp
 am__objects_1 =
-am__objects_2 =  \
-	test_cryptotarget100M-accounting_tests.$(OBJEXT) \
+am__objects_2 = test_cryptotarget100M-accounting_tests.$(OBJEXT) \
 	test_cryptotarget100M-wallet_tests.$(OBJEXT) \
 	test_cryptotarget100M-rpc_wallet_tests.$(OBJEXT)
-am_test_cryptotarget100M_OBJECTS = test_cryptotarget100M-alert_tests.$(OBJEXT) \
+am_test_cryptotarget100M_OBJECTS =  \
+	test_cryptotarget100M-alert_tests.$(OBJEXT) \
 	test_cryptotarget100M-allocator_tests.$(OBJEXT) \
 	test_cryptotarget100M-base32_tests.$(OBJEXT) \
 	test_cryptotarget100M-base58_tests.$(OBJEXT) \
@@ -180,10 +181,11 @@ test_cryptotarget100M_OBJECTS = $(am_test_cryptotarget100M_OBJECTS) \
 am__DEPENDENCIES_1 = $(am__append_2)
 am__DEPENDENCIES_2 = $(am__append_3)
 am__DEPENDENCIES_3 =
-test_cryptotarget100M_DEPENDENCIES = $(LIBCRYPTOTARGET100M_SERVER) $(LIBCRYPTOTARGET100M_CLI) \
-	$(LIBCRYPTOTARGET100M_COMMON) $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__append_4) $(am__DEPENDENCIES_3)
+test_cryptotarget100M_DEPENDENCIES = $(LIBCRYPTOTARGET100M_SERVER) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) $(am__append_4) \
+	$(am__DEPENDENCIES_3)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -229,7 +231,8 @@ AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(test_cryptotarget100M_SOURCES) $(nodist_test_cryptotarget100M_SOURCES)
+SOURCES = $(test_cryptotarget100M_SOURCES) \
+	$(nodist_test_cryptotarget100M_SOURCES)
 DIST_SOURCES = $(am__test_cryptotarget100M_SOURCES_DIST)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
@@ -460,13 +463,13 @@ TEST_LOG_DRIVER = $(SHELL) $(top_srcdir)/src/build-aux/test-driver
 TEST_LOG_COMPILE = $(TEST_LOG_COMPILER) $(AM_TEST_LOG_FLAGS) \
 	$(TEST_LOG_FLAGS)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing automake-1.14
+AUTOCONF = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing automake-1.14
 AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
@@ -489,9 +492,9 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 0
-CLIENT_VERSION_MINOR = 9
-CLIENT_VERSION_REVISION = 5
+CLIENT_VERSION_MAJOR = 1
+CLIENT_VERSION_MINOR = 0
+CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2015
 CPP = gcc -E
@@ -538,7 +541,7 @@ LRELEASE = /usr/bin/lrelease-qt4
 LTLIBOBJS = 
 LUPDATE = /usr/bin/lupdate-qt4
 MAINT = 
-MAKEINFO = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing makeinfo
 MAKENSIS = 
 MKDIR_P = /bin/mkdir -p
 MOC = /usr/bin/moc-qt4
@@ -554,10 +557,10 @@ OTOOL =
 PACKAGE = cryptotarget100M
 PACKAGE_BUGREPORT = info@cryptotarget100M.org
 PACKAGE_NAME = Cryptotarget100M Core
-PACKAGE_STRING = Cryptotarget100M Core 0.9.5
+PACKAGE_STRING = Cryptotarget100M Core 1.0.0
 PACKAGE_TARNAME = cryptotarget100M
 PACKAGE_URL = 
-PACKAGE_VERSION = 0.9.5
+PACKAGE_VERSION = 1.0.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
@@ -594,14 +597,14 @@ TESTDEFS =  -DBOOST_TEST_DYN_LINK
 UIC = /usr/bin/uic-qt4
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 0.9.5
+VERSION = 1.0.0
 WINDOWS_BITS = 
 WINDRES = 
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/sb/crt100m/cryptotarget100M/src/test
-abs_srcdir = /home/sb/crt100m/cryptotarget100M/src/test
-abs_top_builddir = /home/sb/crt100m/cryptotarget100M
-abs_top_srcdir = /home/sb/crt100m/cryptotarget100M
+abs_builddir = /home/sb/newestcrt/Cryptotarget100M/src/test
+abs_srcdir = /home/sb/newestcrt/Cryptotarget100M/src/test
+abs_top_builddir = /home/sb/newestcrt/Cryptotarget100M
+abs_top_srcdir = /home/sb/newestcrt/Cryptotarget100M
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_OBJC = gcc
@@ -632,7 +635,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/install-sh
+install_sh = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -678,8 +681,9 @@ BUILT_SOURCES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
 
 # test_cryptotarget100M binary #
 test_cryptotarget100M_CPPFLAGS = $(AM_CPPFLAGS) $(TESTDEFS)
-test_cryptotarget100M_LDADD = $(LIBCRYPTOTARGET100M_SERVER) $(LIBCRYPTOTARGET100M_CLI) \
-	$(LIBCRYPTOTARGET100M_COMMON) $(LIBLEVELDB) $(LIBMEMENV) $(BOOST_LIBS) \
+test_cryptotarget100M_LDADD = $(LIBCRYPTOTARGET100M_SERVER) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+	$(LIBLEVELDB) $(LIBMEMENV) $(BOOST_LIBS) \
 	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) $(am__append_4) $(BDB_LIBS)
 test_cryptotarget100M_SOURCES = alert_tests.cpp allocator_tests.cpp \
 	base32_tests.cpp base58_tests.cpp base64_tests.cpp \
@@ -689,10 +693,10 @@ test_cryptotarget100M_SOURCES = alert_tests.cpp allocator_tests.cpp \
 	miner_tests.cpp mruset_tests.cpp multisig_tests.cpp \
 	netbase_tests.cpp pmt_tests.cpp rpc_tests.cpp \
 	script_P2SH_tests.cpp script_tests.cpp serialize_tests.cpp \
-	sigopcount_tests.cpp test_cryptotarget100M.cpp transaction_tests.cpp \
-	uint256_tests.cpp util_tests.cpp scriptnum_tests.cpp \
-	sighash_tests.cpp $(JSON_TEST_FILES) $(RAW_TEST_FILES) \
-	$(am__append_5)
+	sigopcount_tests.cpp test_cryptotarget100M.cpp \
+	transaction_tests.cpp uint256_tests.cpp util_tests.cpp \
+	scriptnum_tests.cpp sighash_tests.cpp $(JSON_TEST_FILES) \
+	$(RAW_TEST_FILES) $(am__append_5)
 nodist_test_cryptotarget100M_SOURCES = $(BUILT_SOURCES)
 CLEANFILES = *.gcda *.gcno $(BUILT_SOURCES)
 all: $(BUILT_SOURCES)

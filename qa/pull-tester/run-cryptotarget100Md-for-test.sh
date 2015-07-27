@@ -3,14 +3,14 @@
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
-DATADIR="/home/sb/crt100m/cryptotarget100M/.cryptotarget100M"
+DATADIR="/home/sb/newestcrt/Cryptotarget100M/.cryptotarget100M"
 rm -rf "$DATADIR"
 mkdir -p "$DATADIR"/regtest
 touch "$DATADIR/regtest/debug.log"
 tail -q -n 1 -F "$DATADIR/regtest/debug.log" | grep -m 1 -q "Done loading" &
 WAITER=$!
 PORT=`expr $BASHPID + 10000`
-"/home/sb/crt100m/cryptotarget100M/src/cryptotarget100Md" -connect=0.0.0.0 -datadir="$DATADIR" -rpcuser=user -rpcpassword=pass -listen -keypool=3 -debug -debug=net -logtimestamps -port=$PORT -regtest -rpcport=`expr $PORT + 1` &
+"/home/sb/newestcrt/Cryptotarget100M/src/cryptotarget100Md" -connect=0.0.0.0 -datadir="$DATADIR" -rpcuser=user -rpcpassword=pass -listen -keypool=3 -debug -debug=net -logtimestamps -port=$PORT -regtest -rpcport=`expr $PORT + 1` &
 CRYPTOTARGET100MD=$!
 
 #Install a watchdog.

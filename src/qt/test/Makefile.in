@@ -123,20 +123,23 @@ am__test_cryptotarget100M_qt_SOURCES_DIST = test_main.cpp uritests.cpp \
 	paymentservertests.cpp
 am__objects_1 =
 @ENABLE_WALLET_TRUE@am__objects_2 = test_cryptotarget100M_qt-paymentservertests.$(OBJEXT)
-am_test_cryptotarget100M_qt_OBJECTS = test_cryptotarget100M_qt-test_main.$(OBJEXT) \
+am_test_cryptotarget100M_qt_OBJECTS =  \
+	test_cryptotarget100M_qt-test_main.$(OBJEXT) \
 	test_cryptotarget100M_qt-uritests.$(OBJEXT) $(am__objects_1) \
 	$(am__objects_2)
 @ENABLE_WALLET_TRUE@am__objects_3 = test_cryptotarget100M_qt-moc_paymentservertests.$(OBJEXT)
 am__objects_4 = test_cryptotarget100M_qt-moc_uritests.$(OBJEXT) \
 	$(am__objects_3)
 nodist_test_cryptotarget100M_qt_OBJECTS = $(am__objects_4)
-test_cryptotarget100M_qt_OBJECTS = $(am_test_cryptotarget100M_qt_OBJECTS) \
+test_cryptotarget100M_qt_OBJECTS =  \
+	$(am_test_cryptotarget100M_qt_OBJECTS) \
 	$(nodist_test_cryptotarget100M_qt_OBJECTS)
 am__DEPENDENCIES_1 = $(am__append_2)
 am__DEPENDENCIES_2 = $(am__append_3)
 am__DEPENDENCIES_3 =
-test_cryptotarget100M_qt_DEPENDENCIES = $(LIBCRYPTOTARGET100MQT) $(LIBCRYPTOTARGET100M_SERVER) \
-	$(am__append_6) $(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+test_cryptotarget100M_qt_DEPENDENCIES = $(LIBCRYPTOTARGET100MQT) \
+	$(LIBCRYPTOTARGET100M_SERVER) $(am__append_6) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) \
 	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
 	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
@@ -189,7 +192,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(test_cryptotarget100M_qt_SOURCES) $(nodist_test_cryptotarget100M_qt_SOURCES)
+SOURCES = $(test_cryptotarget100M_qt_SOURCES) \
+	$(nodist_test_cryptotarget100M_qt_SOURCES)
 DIST_SOURCES = $(am__test_cryptotarget100M_qt_SOURCES_DIST)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
@@ -630,11 +634,12 @@ TEST_QT_H = \
 
 BUILT_SOURCES = $(TEST_QT_MOC_CPP)
 test_cryptotarget100M_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) $(QT_TEST_INCLUDES)
-test_cryptotarget100M_qt_SOURCES = test_main.cpp uritests.cpp $(TEST_QT_H) \
-	$(am__append_5)
+test_cryptotarget100M_qt_SOURCES = test_main.cpp uritests.cpp \
+	$(TEST_QT_H) $(am__append_5)
 nodist_test_cryptotarget100M_qt_SOURCES = $(TEST_QT_MOC_CPP)
-test_cryptotarget100M_qt_LDADD = $(LIBCRYPTOTARGET100MQT) $(LIBCRYPTOTARGET100M_SERVER) \
-	$(am__append_6) $(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+test_cryptotarget100M_qt_LDADD = $(LIBCRYPTOTARGET100MQT) \
+	$(LIBCRYPTOTARGET100M_SERVER) $(am__append_6) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
 	$(LIBLEVELDB) $(LIBMEMENV) $(BOOST_LIBS) $(QT_DBUS_LIBS) \
 	$(QT_TEST_LIBS) $(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
 	$(BDB_LIBS)

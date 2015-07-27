@@ -1,7 +1,7 @@
-test_cryptotarget100M_qt-moc_paymentservertests.o: moc_paymentservertests.cpp \
- /usr/include/stdc-predef.h paymentservertests.h ../paymentserver.h \
- ../paymentrequestplus.h ../paymentrequest.pb.h \
- /usr/include/c++/4.8/string \
+test_cryptotarget100M_qt-moc_paymentservertests.o: \
+ moc_paymentservertests.cpp /usr/include/stdc-predef.h \
+ paymentservertests.h ../paymentserver.h ../paymentrequestplus.h \
+ ../paymentrequest.pb.h /usr/include/c++/4.8/string \
  /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

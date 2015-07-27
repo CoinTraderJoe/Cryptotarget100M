@@ -85,8 +85,9 @@ DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/qa/pull-tester/run-cryptotarget100Md-for-test.sh.in \
 	$(top_srcdir)/qa/pull-tester/build-tests.sh.in COPYING INSTALL \
 	src/build-aux/compile src/build-aux/config.guess \
-	src/build-aux/config.sub src/build-aux/install-sh \
-	src/build-aux/missing $(top_srcdir)/src/build-aux/compile \
+	src/build-aux/config.sub src/build-aux/depcomp \
+	src/build-aux/install-sh src/build-aux/missing \
+	$(top_srcdir)/src/build-aux/compile \
 	$(top_srcdir)/src/build-aux/config.guess \
 	$(top_srcdir)/src/build-aux/config.sub \
 	$(top_srcdir)/src/build-aux/install-sh \

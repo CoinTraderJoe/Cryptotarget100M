@@ -123,20 +123,23 @@ am__test_cryptotarget100M_qt_SOURCES_DIST = test_main.cpp uritests.cpp \
 	paymentservertests.cpp
 am__objects_1 =
 am__objects_2 = test_cryptotarget100M_qt-paymentservertests.$(OBJEXT)
-am_test_cryptotarget100M_qt_OBJECTS = test_cryptotarget100M_qt-test_main.$(OBJEXT) \
+am_test_cryptotarget100M_qt_OBJECTS =  \
+	test_cryptotarget100M_qt-test_main.$(OBJEXT) \
 	test_cryptotarget100M_qt-uritests.$(OBJEXT) $(am__objects_1) \
 	$(am__objects_2)
 am__objects_3 = test_cryptotarget100M_qt-moc_paymentservertests.$(OBJEXT)
 am__objects_4 = test_cryptotarget100M_qt-moc_uritests.$(OBJEXT) \
 	$(am__objects_3)
 nodist_test_cryptotarget100M_qt_OBJECTS = $(am__objects_4)
-test_cryptotarget100M_qt_OBJECTS = $(am_test_cryptotarget100M_qt_OBJECTS) \
+test_cryptotarget100M_qt_OBJECTS =  \
+	$(am_test_cryptotarget100M_qt_OBJECTS) \
 	$(nodist_test_cryptotarget100M_qt_OBJECTS)
 am__DEPENDENCIES_1 = $(am__append_2)
 am__DEPENDENCIES_2 = $(am__append_3)
 am__DEPENDENCIES_3 =
-test_cryptotarget100M_qt_DEPENDENCIES = $(LIBCRYPTOTARGET100MQT) $(LIBCRYPTOTARGET100M_SERVER) \
-	$(am__append_6) $(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+test_cryptotarget100M_qt_DEPENDENCIES = $(LIBCRYPTOTARGET100MQT) \
+	$(LIBCRYPTOTARGET100M_SERVER) $(am__append_6) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) \
 	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
 	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
@@ -189,7 +192,8 @@ AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(test_cryptotarget100M_qt_SOURCES) $(nodist_test_cryptotarget100M_qt_SOURCES)
+SOURCES = $(test_cryptotarget100M_qt_SOURCES) \
+	$(nodist_test_cryptotarget100M_qt_SOURCES)
 DIST_SOURCES = $(am__test_cryptotarget100M_qt_SOURCES_DIST)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
@@ -420,13 +424,13 @@ TEST_LOG_DRIVER = $(SHELL) $(top_srcdir)/src/build-aux/test-driver
 TEST_LOG_COMPILE = $(TEST_LOG_COMPILER) $(AM_TEST_LOG_FLAGS) \
 	$(TEST_LOG_FLAGS)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing automake-1.14
+AUTOCONF = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing automake-1.14
 AWK = mawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
@@ -449,9 +453,9 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 0
-CLIENT_VERSION_MINOR = 9
-CLIENT_VERSION_REVISION = 5
+CLIENT_VERSION_MAJOR = 1
+CLIENT_VERSION_MINOR = 0
+CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2015
 CPP = gcc -E
@@ -498,7 +502,7 @@ LRELEASE = /usr/bin/lrelease-qt4
 LTLIBOBJS = 
 LUPDATE = /usr/bin/lupdate-qt4
 MAINT = 
-MAKEINFO = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/missing makeinfo
 MAKENSIS = 
 MKDIR_P = /bin/mkdir -p
 MOC = /usr/bin/moc-qt4
@@ -514,10 +518,10 @@ OTOOL =
 PACKAGE = cryptotarget100M
 PACKAGE_BUGREPORT = info@cryptotarget100M.org
 PACKAGE_NAME = Cryptotarget100M Core
-PACKAGE_STRING = Cryptotarget100M Core 0.9.5
+PACKAGE_STRING = Cryptotarget100M Core 1.0.0
 PACKAGE_TARNAME = cryptotarget100M
 PACKAGE_URL = 
-PACKAGE_VERSION = 0.9.5
+PACKAGE_VERSION = 1.0.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
@@ -554,14 +558,14 @@ TESTDEFS =  -DBOOST_TEST_DYN_LINK
 UIC = /usr/bin/uic-qt4
 USE_QRCODE = 
 USE_UPNP = 
-VERSION = 0.9.5
+VERSION = 1.0.0
 WINDOWS_BITS = 
 WINDRES = 
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/sb/crt100m/cryptotarget100M/src/qt/test
-abs_srcdir = /home/sb/crt100m/cryptotarget100M/src/qt/test
-abs_top_builddir = /home/sb/crt100m/cryptotarget100M
-abs_top_srcdir = /home/sb/crt100m/cryptotarget100M
+abs_builddir = /home/sb/newestcrt/Cryptotarget100M/src/qt/test
+abs_srcdir = /home/sb/newestcrt/Cryptotarget100M/src/qt/test
+abs_top_builddir = /home/sb/newestcrt/Cryptotarget100M
+abs_top_srcdir = /home/sb/newestcrt/Cryptotarget100M
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 ac_ct_OBJC = gcc
@@ -592,7 +596,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/sb/crt100m/cryptotarget100M/src/build-aux/install-sh
+install_sh = ${SHELL} /home/sb/newestcrt/Cryptotarget100M/src/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -630,11 +634,12 @@ TEST_QT_H = \
 
 BUILT_SOURCES = $(TEST_QT_MOC_CPP)
 test_cryptotarget100M_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) $(QT_TEST_INCLUDES)
-test_cryptotarget100M_qt_SOURCES = test_main.cpp uritests.cpp $(TEST_QT_H) \
-	$(am__append_5)
+test_cryptotarget100M_qt_SOURCES = test_main.cpp uritests.cpp \
+	$(TEST_QT_H) $(am__append_5)
 nodist_test_cryptotarget100M_qt_SOURCES = $(TEST_QT_MOC_CPP)
-test_cryptotarget100M_qt_LDADD = $(LIBCRYPTOTARGET100MQT) $(LIBCRYPTOTARGET100M_SERVER) \
-	$(am__append_6) $(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+test_cryptotarget100M_qt_LDADD = $(LIBCRYPTOTARGET100MQT) \
+	$(LIBCRYPTOTARGET100M_SERVER) $(am__append_6) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
 	$(LIBLEVELDB) $(LIBMEMENV) $(BOOST_LIBS) $(QT_DBUS_LIBS) \
 	$(QT_TEST_LIBS) $(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
 	$(BDB_LIBS)

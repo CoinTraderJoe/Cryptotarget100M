@@ -1,5 +1,5 @@
-test_cryptotarget100M_qt-uritests.o: uritests.cpp /usr/include/stdc-predef.h \
- uritests.h /usr/include/qt4/QtCore/QObject \
+test_cryptotarget100M_qt-uritests.o: uritests.cpp \
+ /usr/include/stdc-predef.h uritests.h /usr/include/qt4/QtCore/QObject \
  /usr/include/qt4/QtCore/qobject.h /usr/include/qt4/QtCore/qobjectdefs.h \
  /usr/include/qt4/QtCore/qnamespace.h /usr/include/qt4/QtCore/qglobal.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \

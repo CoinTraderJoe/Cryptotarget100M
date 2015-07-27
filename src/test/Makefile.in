@@ -119,15 +119,16 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am__test_cryptotarget100M_SOURCES_DIST = alert_tests.cpp allocator_tests.cpp \
-	base32_tests.cpp base58_tests.cpp base64_tests.cpp \
-	bignum_tests.cpp bloom_tests.cpp canonical_tests.cpp \
-	checkblock_tests.cpp Checkpoints_tests.cpp compress_tests.cpp \
-	DoS_tests.cpp getarg_tests.cpp key_tests.cpp main_tests.cpp \
-	miner_tests.cpp mruset_tests.cpp multisig_tests.cpp \
-	netbase_tests.cpp pmt_tests.cpp rpc_tests.cpp \
-	script_P2SH_tests.cpp script_tests.cpp serialize_tests.cpp \
-	sigopcount_tests.cpp test_cryptotarget100M.cpp transaction_tests.cpp \
+am__test_cryptotarget100M_SOURCES_DIST = alert_tests.cpp \
+	allocator_tests.cpp base32_tests.cpp base58_tests.cpp \
+	base64_tests.cpp bignum_tests.cpp bloom_tests.cpp \
+	canonical_tests.cpp checkblock_tests.cpp Checkpoints_tests.cpp \
+	compress_tests.cpp DoS_tests.cpp getarg_tests.cpp \
+	key_tests.cpp main_tests.cpp miner_tests.cpp mruset_tests.cpp \
+	multisig_tests.cpp netbase_tests.cpp pmt_tests.cpp \
+	rpc_tests.cpp script_P2SH_tests.cpp script_tests.cpp \
+	serialize_tests.cpp sigopcount_tests.cpp \
+	test_cryptotarget100M.cpp transaction_tests.cpp \
 	uint256_tests.cpp util_tests.cpp scriptnum_tests.cpp \
 	sighash_tests.cpp data/script_valid.json \
 	data/base58_keys_valid.json data/sig_canonical.json \
@@ -137,11 +138,11 @@ am__test_cryptotarget100M_SOURCES_DIST = alert_tests.cpp allocator_tests.cpp \
 	data/alertTests.raw accounting_tests.cpp wallet_tests.cpp \
 	rpc_wallet_tests.cpp
 am__objects_1 =
-@ENABLE_WALLET_TRUE@am__objects_2 =  \
-@ENABLE_WALLET_TRUE@	test_cryptotarget100M-accounting_tests.$(OBJEXT) \
+@ENABLE_WALLET_TRUE@am__objects_2 = test_cryptotarget100M-accounting_tests.$(OBJEXT) \
 @ENABLE_WALLET_TRUE@	test_cryptotarget100M-wallet_tests.$(OBJEXT) \
 @ENABLE_WALLET_TRUE@	test_cryptotarget100M-rpc_wallet_tests.$(OBJEXT)
-am_test_cryptotarget100M_OBJECTS = test_cryptotarget100M-alert_tests.$(OBJEXT) \
+am_test_cryptotarget100M_OBJECTS =  \
+	test_cryptotarget100M-alert_tests.$(OBJEXT) \
 	test_cryptotarget100M-allocator_tests.$(OBJEXT) \
 	test_cryptotarget100M-base32_tests.$(OBJEXT) \
 	test_cryptotarget100M-base58_tests.$(OBJEXT) \
@@ -180,10 +181,11 @@ test_cryptotarget100M_OBJECTS = $(am_test_cryptotarget100M_OBJECTS) \
 am__DEPENDENCIES_1 = $(am__append_2)
 am__DEPENDENCIES_2 = $(am__append_3)
 am__DEPENDENCIES_3 =
-test_cryptotarget100M_DEPENDENCIES = $(LIBCRYPTOTARGET100M_SERVER) $(LIBCRYPTOTARGET100M_CLI) \
-	$(LIBCRYPTOTARGET100M_COMMON) $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__append_4) $(am__DEPENDENCIES_3)
+test_cryptotarget100M_DEPENDENCIES = $(LIBCRYPTOTARGET100M_SERVER) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) $(am__append_4) \
+	$(am__DEPENDENCIES_3)
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -229,7 +231,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(test_cryptotarget100M_SOURCES) $(nodist_test_cryptotarget100M_SOURCES)
+SOURCES = $(test_cryptotarget100M_SOURCES) \
+	$(nodist_test_cryptotarget100M_SOURCES)
 DIST_SOURCES = $(am__test_cryptotarget100M_SOURCES_DIST)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
@@ -678,8 +681,9 @@ BUILT_SOURCES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
 
 # test_cryptotarget100M binary #
 test_cryptotarget100M_CPPFLAGS = $(AM_CPPFLAGS) $(TESTDEFS)
-test_cryptotarget100M_LDADD = $(LIBCRYPTOTARGET100M_SERVER) $(LIBCRYPTOTARGET100M_CLI) \
-	$(LIBCRYPTOTARGET100M_COMMON) $(LIBLEVELDB) $(LIBMEMENV) $(BOOST_LIBS) \
+test_cryptotarget100M_LDADD = $(LIBCRYPTOTARGET100M_SERVER) \
+	$(LIBCRYPTOTARGET100M_CLI) $(LIBCRYPTOTARGET100M_COMMON) \
+	$(LIBLEVELDB) $(LIBMEMENV) $(BOOST_LIBS) \
 	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) $(am__append_4) $(BDB_LIBS)
 test_cryptotarget100M_SOURCES = alert_tests.cpp allocator_tests.cpp \
 	base32_tests.cpp base58_tests.cpp base64_tests.cpp \
@@ -689,10 +693,10 @@ test_cryptotarget100M_SOURCES = alert_tests.cpp allocator_tests.cpp \
 	miner_tests.cpp mruset_tests.cpp multisig_tests.cpp \
 	netbase_tests.cpp pmt_tests.cpp rpc_tests.cpp \
 	script_P2SH_tests.cpp script_tests.cpp serialize_tests.cpp \
-	sigopcount_tests.cpp test_cryptotarget100M.cpp transaction_tests.cpp \
-	uint256_tests.cpp util_tests.cpp scriptnum_tests.cpp \
-	sighash_tests.cpp $(JSON_TEST_FILES) $(RAW_TEST_FILES) \
-	$(am__append_5)
+	sigopcount_tests.cpp test_cryptotarget100M.cpp \
+	transaction_tests.cpp uint256_tests.cpp util_tests.cpp \
+	scriptnum_tests.cpp sighash_tests.cpp $(JSON_TEST_FILES) \
+	$(RAW_TEST_FILES) $(am__append_5)
 nodist_test_cryptotarget100M_SOURCES = $(BUILT_SOURCES)
 CLEANFILES = *.gcda *.gcno $(BUILT_SOURCES)
 all: $(BUILT_SOURCES)

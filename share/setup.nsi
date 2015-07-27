@@ -5,16 +5,16 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.9.5
+!define VERSION 1.0.0
 !define COMPANY "Cryptotarget100M Core project"
 !define URL http://www.cryptotarget100M.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/sb/crt100m/cryptotarget100M/share/pixmaps/cryptotarget100M.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/sb/crt100m/cryptotarget100M/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/sb/newestcrt/Cryptotarget100M/share/pixmaps/cryptotarget100M.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/sb/newestcrt/Cryptotarget100M/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/sb/crt100m/cryptotarget100M/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/sb/newestcrt/Cryptotarget100M/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Cryptotarget100M Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\cryptotarget100M-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/sb/crt100m/cryptotarget100M/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/sb/newestcrt/Cryptotarget100M/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/sb/crt100m/cryptotarget100M/cryptotarget100M-${VERSION}-win-setup.exe
+OutFile /home/sb/newestcrt/Cryptotarget100M/cryptotarget100M-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\Cryptotarget100M
 !else
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/sb/crt100m/cryptotarget100M/release/cryptotarget100M-qt.exe
-    File /oname=COPYING.txt /home/sb/crt100m/cryptotarget100M/COPYING
-    File /oname=readme.txt /home/sb/crt100m/cryptotarget100M/doc/README_windows.txt
+    File /home/sb/newestcrt/Cryptotarget100M/release/cryptotarget100M-qt.exe
+    File /oname=COPYING.txt /home/sb/newestcrt/Cryptotarget100M/COPYING
+    File /oname=readme.txt /home/sb/newestcrt/Cryptotarget100M/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/sb/crt100m/cryptotarget100M/release/cryptotarget100Md.exe
-    File /home/sb/crt100m/cryptotarget100M/release/cryptotarget100M-cli.exe
+    File /home/sb/newestcrt/Cryptotarget100M/release/cryptotarget100Md.exe
+    File /home/sb/newestcrt/Cryptotarget100M/release/cryptotarget100M-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /home/sb/crt100m/cryptotarget100M/doc\*.*
+    File /r /home/sb/newestcrt/Cryptotarget100M/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
