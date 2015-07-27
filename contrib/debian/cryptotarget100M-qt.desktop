@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Cryptotarget100M
+Comment=Cryptotarget100M P2P Cryptocurrency
+Comment[fr]=Cryptotarget100M, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Cryptotarget100M, eşten eşe kriptografik sanal para birimi
+Exec=cryptotarget100M-qt %u
+Terminal=false
+Type=Application
+Icon=cryptotarget100M128
+MimeType=x-scheme-handler/cryptotarget100M;
+Categories=Office;Finance;
